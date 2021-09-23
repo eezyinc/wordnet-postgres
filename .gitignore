@@ -1,0 +1,2 @@
+docker-entrypoint-initdb.d/02-data.sql
+.env

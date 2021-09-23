@@ -1,0 +1,13 @@
+version: '2'
+services:
+  wordnet:
+    image: postgres:11-alpine
+    restart: unless-stopped
+    ports:
+      - ${PORT:-5432}:5432
+    environment:
+      - POSTGRES_DB=public
+      - POSTGRES_PASSWORD=wordnet
+    volumes:
+      - "./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d"
+      - "./data:/var/lib/postgresql/data"
