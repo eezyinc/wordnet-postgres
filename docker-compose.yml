@@ -4,7 +4,7 @@ services:
     image: postgres:11-alpine
     restart: unless-stopped
     ports:
-      - ${PORT:-5432}:5432
+      - 5432
     environment:
       - POSTGRES_DB=public
       - POSTGRES_PASSWORD=wordnet

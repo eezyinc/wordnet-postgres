@@ -11,12 +11,6 @@ docker-compose up -d
 
 On the initial run, data will be loaded into postgres which might take quite awhile. This will also create the ./data directory.
 
-By default this will run on port `5432`; to run it on a different local port, create a `.env` file with e.g.:
-
-```
-PORT=5433
-```
-
 ### Original readme from forked project:
 
 ```
